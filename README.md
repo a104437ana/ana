@@ -1,19 +1,24 @@
 # ana
 ## Personal Project
-A simple CLI calendar app to add, list, and manage events. Works on Linux with Python 3.
-## Installation
-```
+Personal event manager in your terminal. Add, list, edit and remove events with a flexible date syntax.
+
+## Install
+```bash
 git clone git@github.com:a104437ana/ana.git
-```
-```
 cd ana
-./install.sh
+pip install -e .
 ```
+
+After this, `ana` is available anywhere in your terminal.
+
 ## Usage
+Example usage:
 ```
 ana greet
-```
-## Uninstallation
-```
-./uninstall.sh
+ana add 15 4 2026 14:30 "dentist"
+ana ls
+ana edit 1 "date"
+ana rm 1
+ana add 1 1 2027 "new year"
+ana clear
 ```

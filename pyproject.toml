@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ana"
+version = "0.1.0"
+description = "Personal event manager in your terminal"
+requires-python = ">=3.10"
+dependencies = [
+    "typer[all]>=0.12",
+    "rich>=13",
+]
+
+[project.scripts]
+ana = "ana.main:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ana*"]
